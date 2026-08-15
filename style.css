@@ -85,13 +85,6 @@ body {
   grid-area: text;
 }
 
-.prompt {
-  font-family: var(--mono);
-  font-size: 0.95rem;
-  color: var(--accent);
-  margin: 0 0 0.5rem;
-}
-
 .hero h1 {
   font-family: var(--sans);
   font-weight: 800;
@@ -119,25 +112,6 @@ body {
   margin: 0;
 }
 
-.highlight {
-  position: relative;
-  font-weight: 700;
-  font-family: var(--mono);
-  white-space: nowrap;
-}
-
-.highlight::after {
-  content: "";
-  position: absolute;
-  left: -3px;
-  right: -3px;
-  bottom: 3px;
-  height: 0.4em;
-  background: var(--accent);
-  opacity: 0.25;
-  z-index: -1;
-}
-
 .cta-button {
   display: inline-block;
   margin-top: 1.75rem;
@@ -162,19 +136,26 @@ body {
 .photo-frame {
   grid-area: photo;
   margin: 0 auto;
-  max-width: 240px;
+  max-width: 320px;
   border: 1px solid var(--rule);
-  border-top: 3px solid var(--accent);
+  border-radius: 20px;
   background: var(--surface);
   padding: 0.5rem;
   box-shadow: 0 8px 24px rgba(15, 17, 21, 0.08);
 }
 
-.photo-frame img {
+.photo-crop {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.photo-crop img {
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 4;
+  height: 100%;
   object-fit: cover;
+  object-position: top center;
 }
 
 /* Experience */
@@ -263,25 +244,24 @@ body {
 }
 
 .company {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
   font-family: var(--sans);
   font-size: 0.95rem;
   color: var(--muted);
-  margin: 0.15rem 0 0.6rem;
+  margin: 0.15rem 0 0.3rem;
 }
 
-.milestone {
-  display: inline-flex;
+.milestone-line {
+  display: flex;
   align-items: center;
-  gap: 0.35rem;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 0.6rem;
 }
 
-.milestone-arrow {
-  color: var(--muted);
+.milestone-label {
+  font-family: var(--sans);
   font-size: 0.85rem;
+  color: var(--muted);
 }
 
 .mini-badge {
@@ -335,7 +315,7 @@ body {
   }
 
   .photo-frame {
-    max-width: 200px;
+    max-width: 280px;
   }
 }
 

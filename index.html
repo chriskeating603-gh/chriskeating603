@@ -28,20 +28,18 @@
     <section class="hero">
       <div class="hero-grid">
         <figure class="photo-frame">
-          <img src="photo.jpg" width="675" height="900" alt="Chris Keating" />
+          <div class="photo-crop">
+            <img src="photo.jpg" alt="Chris Keating" />
+          </div>
         </figure>
         <div class="hero-text">
-          <p class="prompt">$ whoami</p>
           <h1>Hey, I&rsquo;m Chris<span class="cursor" aria-hidden="true">_</span></h1>
           <p>
             Staff Data Scientist &amp; Manager at Meta. Before that: founding data
-            scientist at a startup that got acquired by Stripe, and a few years at
-            Twitter before that. Yale econ/psych grad, two-season professional
-            lacrosse player, Phillips Exeter alum, and reigning record-holder
-            (in my own kitchen) for most donuts eaten in one sitting &mdash;
-            <span class="highlight">21</span>, no regrets. I like turning messy
-            problems into ones you can actually measure. Say hi if you&rsquo;re
-            building something interesting.
+            scientist at a startup that got acquired by Stripe, and a stint at
+            Twitter before that. Yale econ/psych grad and two-season professional
+            lacrosse player. I like turning messy problems into ones you can
+            actually measure. Say hi if you&rsquo;re building something interesting.
           </p>
           <a class="cta-button" href="mailto:ckeating.nh@gmail.com">Get in touch</a>
         </div>
@@ -58,13 +56,14 @@
           <div class="experience-body">
             <div class="experience-head">
               <span class="role">Staff Data Scientist &amp; Manager</span>
-              <span class="dates">2025&ndash;present</span>
+              <span class="dates">May 2025&ndash;Present</span>
             </div>
             <p class="company">Meta</p>
             <ul class="blurb-list">
-              <li>Lead measurement and experimentation strategy for Meta&rsquo;s growth and marketing orgs</li>
-              <li>Manage a distributed team of data scientists across multiple offices</li>
-              <li>Partner directly with senior leadership on cross-functional analytics initiatives</li>
+              <li>Led design and execution of the measurement framework for in-app promotions budgeting across competing growth teams, working closely with VPs and Directors</li>
+              <li>Overhauled SEO measurement standards, presenting on a recurring basis to the CMO</li>
+              <li>Manage a distributed data science team based in London, Seattle, and San Francisco</li>
+              <li>Drove the shift from traditional A/B testing to multi-armed bandit testing for promotional campaigns with AI-generated content</li>
             </ul>
           </div>
         </li>
@@ -74,21 +73,21 @@
           <div class="experience-body">
             <div class="experience-head">
               <span class="role">Founding Data Scientist</span>
-              <span class="dates">2023&ndash;2024</span>
+              <span class="dates">May 2023&ndash;May 2024</span>
             </div>
-            <p class="company">
-              Valora
-              <span class="milestone"><span class="milestone-arrow">&rarr;</span>
-                <span class="mini-badge stripe">
-                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"/></svg>
-                  Stripe
-                </span>
+            <p class="company">Valora</p>
+            <p class="milestone-line">
+              <span class="milestone-label">Acquired by</span>
+              <span class="mini-badge stripe">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"/></svg>
+                Stripe
               </span>
             </p>
             <ul class="blurb-list">
-              <li>First data hire; built the analytics stack and experimentation practice from scratch</li>
-              <li>Shaped product and go-to-market strategy through user research and behavioral analysis</li>
-              <li>Ran onboarding and engagement experiments in partnership with product and design</li>
+              <li>First data hire; led the overhaul of company-level OKRs and KPIs, reshaping ICP and go-to-market strategy</li>
+              <li>Drove analytics and product initiatives to improve engagement in the first week post-onboarding</li>
+              <li>Led a cross-functional initiative with design and engineering to build a faster onboarding flow</li>
+              <li>Built dashboards in SQL and Mixpanel for product impact tracking and decision-making</li>
             </ul>
           </div>
         </li>
@@ -100,13 +99,15 @@
           <div class="experience-body">
             <div class="experience-head">
               <span class="role">Data Scientist</span>
-              <span class="dates">2021&ndash;2023</span>
+              <span class="dates">Jun 2021&ndash;Feb 2023</span>
             </div>
             <p class="company">Twitter</p>
             <ul class="blurb-list">
-              <li>Led retention and conversion-funnel experimentation across the core consumer product</li>
-              <li>Built the business case for a new cross-functional workstream, then helped staff it</li>
-              <li>Mentored junior data scientists and helped drive cross-team collaboration practices</li>
+              <li>Identified key retention drivers for small business customers through cohort and regression analysis</li>
+              <li>Built the business case for a new cross-functional workstream, partnering with the Product Director</li>
+              <li>Designed a product prioritization framework that reshaped the roadmap around metric-driven projects</li>
+              <li>Led a series of experiments to optimize the conversion funnel and engagement</li>
+              <li>Mentored junior data scientists and led a discussion series on cross-functional collaboration</li>
             </ul>
           </div>
         </li>
@@ -118,26 +119,26 @@
           <div class="experience-body">
             <div class="experience-head">
               <span class="role">Product Analyst &rarr; Data Scientist</span>
-              <span class="dates">2018&ndash;2021</span>
+              <span class="dates">Aug 2018&ndash;May 2021</span>
             </div>
-            <p class="company">
-              MoneyLion
-              <span class="milestone"><span class="milestone-arrow">&rarr;</span>
-                <span class="mini-badge nyse">
-                  <svg viewBox="0 0 377.5 149.45" width="34" height="13.4" aria-label="NYSE">
-                    <polygon fill="currentColor" points="52.33 121.54 14.26 68.42 0 68.42 0 147.48 15.23 147.48 15.23 94.32 53.3 147.48 67.56 147.48 67.56 68.42 52.33 68.42 52.33 121.54"/>
-                    <polygon fill="currentColor" points="155.8 68.42 137.33 68.42 117.28 101.09 96.66 68.42 77.22 68.42 108 115.41 108 147.48 124.53 147.48 124.53 115.62 155.8 68.42"/>
-                    <path fill="currentColor" d="M199.1,101.2l-9.25-2.11C179,96.66,176.7,94.71,176.7,90c0-4.55,4.7-8.77,13.63-8.77a32.48,32.48,0,0,1,21.6,7.8l9.58-12.67c-8.93-7.3-20.3-9.9-30.53-9.9-18.51,0-31.5,10.88-31.5,25.33,0,11.36,7.64,18.67,23.22,21.75l9.1,1.79c10.55,2.11,14.44,6,14.44,10.55,0,6.33-5.35,9.26-14.28,9.42-8.61.16-16.89-2.92-24.36-10.55l-9.9,12c7.63,8.77,21.11,12.67,33.77,12.67,19.32,0,31.34-9.42,31.34-24.68C222.81,111.6,214.53,104.78,199.1,101.2Z"/>
-                    <path fill="currentColor" d="M249.56,114.92c2.56,11.9,11.71,19.76,23.75,19.76,8.75,0,15.72-4.05,20.74-11l11.5,9.73a39,39,0,0,1-32.24,16c-25.11,0-41.31-18-41.31-41.48s16.07-41.48,39.08-41.48c17.23,0,40.8,12,36.9,48.45Zm42.79-12.8C290.59,85.93,280.12,81.05,273,81.05c-12.11,0-20.88,7.61-23.69,21.07Z"/>
-                    <polygon fill="#70c4e8" points="299.63 23.85 353.62 23.85 353.62 77.84 377.48 77.84 377.48 0 299.63 0 299.63 23.85"/>
-                  </svg>
-                </span>
+            <p class="company">MoneyLion</p>
+            <p class="milestone-line">
+              <span class="milestone-label">Went public on</span>
+              <span class="mini-badge nyse">
+                <svg viewBox="0 0 377.5 149.45" width="34" height="13.4" aria-label="NYSE">
+                  <polygon fill="currentColor" points="52.33 121.54 14.26 68.42 0 68.42 0 147.48 15.23 147.48 15.23 94.32 53.3 147.48 67.56 147.48 67.56 68.42 52.33 68.42 52.33 121.54"/>
+                  <polygon fill="currentColor" points="155.8 68.42 137.33 68.42 117.28 101.09 96.66 68.42 77.22 68.42 108 115.41 108 147.48 124.53 147.48 124.53 115.62 155.8 68.42"/>
+                  <path fill="currentColor" d="M199.1,101.2l-9.25-2.11C179,96.66,176.7,94.71,176.7,90c0-4.55,4.7-8.77,13.63-8.77a32.48,32.48,0,0,1,21.6,7.8l9.58-12.67c-8.93-7.3-20.3-9.9-30.53-9.9-18.51,0-31.5,10.88-31.5,25.33,0,11.36,7.64,18.67,23.22,21.75l9.1,1.79c10.55,2.11,14.44,6,14.44,10.55,0,6.33-5.35,9.26-14.28,9.42-8.61.16-16.89-2.92-24.36-10.55l-9.9,12c7.63,8.77,21.11,12.67,33.77,12.67,19.32,0,31.34-9.42,31.34-24.68C222.81,111.6,214.53,104.78,199.1,101.2Z"/>
+                  <path fill="currentColor" d="M249.56,114.92c2.56,11.9,11.71,19.76,23.75,19.76,8.75,0,15.72-4.05,20.74-11l11.5,9.73a39,39,0,0,1-32.24,16c-25.11,0-41.31-18-41.31-41.48s16.07-41.48,39.08-41.48c17.23,0,40.8,12,36.9,48.45Zm42.79-12.8C290.59,85.93,280.12,81.05,273,81.05c-12.11,0-20.88,7.61-23.69,21.07Z"/>
+                  <polygon fill="#70c4e8" points="299.63 23.85 353.62 23.85 353.62 77.84 377.48 77.84 377.48 0 299.63 0 299.63 23.85"/>
+                </svg>
               </span>
             </p>
             <ul class="blurb-list">
               <li>Built the company&rsquo;s early data science function from the ground up</li>
-              <li>Developed AI-driven customer support automation and credit-risk analytics</li>
-              <li>Partnered with the executive team on strategy for support and cross-sell</li>
+              <li>Used diff-in-diff analysis to measure the impact of loans on consumer credit scores</li>
+              <li>Led an AI-based chatbot initiative to reduce customer support workload, including dynamic chatbot routing</li>
+              <li>Partnered with the executive team (CEO, CPO) on support and cross-sell strategy</li>
             </ul>
           </div>
         </li>
