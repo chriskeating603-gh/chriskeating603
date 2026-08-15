@@ -11,7 +11,6 @@
   --content-width: 44rem;
 
   --meta: #0668e1;
-  --valora: #6a4cff;
   --twitter: #1d9bf0;
   --stripe: #635bff;
   --nyse-bg: #0a2540;
@@ -145,7 +144,7 @@ body {
 }
 
 .photo-crop {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 14px;
 }
@@ -155,7 +154,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center;
 }
 
 /* Experience */
@@ -208,15 +207,16 @@ body {
 }
 
 .company-badge.meta { background: var(--meta); }
-.company-badge.valora-badge { background: var(--valora); }
 .company-badge.twitter { background: var(--twitter); }
 
-.company-badge.moneylion-badge {
+.company-badge.moneylion-badge,
+.company-badge.valora-badge {
   background: var(--surface);
   border: 1px solid var(--rule);
 }
 
-.company-badge.moneylion-badge img {
+.company-badge.moneylion-badge img,
+.company-badge.valora-badge img {
   width: 1.65rem;
   height: 1.65rem;
   border-radius: 4px;
