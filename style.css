@@ -1,0 +1,313 @@
+:root {
+  --bg: #eaeaee;
+  --header-bg: #ffffff;
+  --text: #16161a;
+  --muted: #55555c;
+  --rule: rgba(17, 17, 17, 0.12);
+  --accent: #ff5a3c;
+  --sans: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --gutter: 3rem;
+  --content-width: 44rem;
+
+  --meta: #0668e1;
+  --valora: #6a4cff;
+  --twitter: #1d9bf0;
+  --moneylion: #0aa06e;
+  --stripe: #635bff;
+  --nyse: #0a2540;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--bg);
+}
+
+.site-header {
+  background: var(--header-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem var(--gutter);
+}
+
+.logo {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.social-nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.social-nav a {
+  color: var(--text);
+  display: inline-flex;
+}
+
+.social-nav a:hover {
+  color: var(--accent);
+}
+
+/* Hero */
+
+.hero {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 4.5rem var(--gutter) 3rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  grid-template-areas: "photo text";
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.hero-text {
+  grid-area: text;
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 6vw, 4.75rem);
+  line-height: 1;
+  margin: 0 0 1.25rem;
+}
+
+.hero p {
+  font-family: var(--sans);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.highlight {
+  position: relative;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  bottom: 3px;
+  height: 0.42em;
+  background: var(--accent);
+  opacity: 0.4;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.75rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.cta-button:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Polaroid photo */
+
+.polaroid {
+  grid-area: photo;
+  margin: 0;
+  max-width: 260px;
+  margin-inline: auto;
+  background: #fff;
+  padding: 0.75rem 0.75rem 2.25rem;
+  box-shadow: 0 16px 32px rgba(17, 17, 17, 0.18);
+  transform: rotate(-4deg);
+  transition: transform 0.35s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.polaroid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* Experience */
+
+.experience {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 1rem var(--gutter) 4.5rem;
+}
+
+.experience-list {
+  list-style: none;
+  margin: 0;
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--rule);
+}
+
+.experience-item {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.experience-item:first-child {
+  padding-top: 0;
+}
+
+.company-badge {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.company-badge.meta { background: var(--meta); }
+.company-badge.valora { background: var(--valora); }
+.company-badge.twitter { background: var(--twitter); }
+.company-badge.moneylion { background: var(--moneylion); font-size: 0.8rem; }
+
+.experience-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+}
+
+.role {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.dates {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0.15rem 0 0.4rem;
+}
+
+.milestone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.milestone-arrow {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.mini-badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.mini-badge.stripe { background: var(--stripe); }
+.mini-badge.nyse { background: var(--nyse); }
+
+.blurb {
+  font-family: var(--sans);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0;
+}
+
+@media (max-width: 780px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "photo" "text";
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .polaroid {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding: 1.25rem 1.5rem;
+  }
+
+  :root {
+    --gutter: 1.5rem;
+  }
+
+  .hero {
+    padding-top: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+  }
+
+  .experience-item {
+    gap: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
